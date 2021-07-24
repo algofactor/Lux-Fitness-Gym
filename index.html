@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Navbar Section -->
-  <nav class="navbar">
+  <nav class="navbar js--nav">
       <a href="/" class="navbar__logo">LUX</a>
       <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -30,12 +30,12 @@
       <div class="hero__content">
           <h1 class="animate-hero">Lux Fitness</h1>
           <p class="animate-hero">Join now for $29</p>
-          <a href="/" class="button animate-hero">Get Started</a>
+          <a href="#services" class="button animate-hero">Get Started</a>
       </div>
   </div>
 
   <!-- Services Section -->
-  <div class="services ">
+  <div class="services js--fixed-nav" id="services">
       <div class="services__container">
           <div class="">
               <p class="topline animate-services">Features</p>
@@ -208,6 +208,7 @@
   </div>
 
   <script src="./jquery-3.5.1.min.js"></script>
+  <script src="./jquery.waypoints.min.js"></script>
   <script src="./gsap-minified/gsap.min.js"></script>
   <script src="./gsap-minified/ScrollTrigger.min.js"></script>
   <script src="./gsap-minified/ScrollToPlugin.min.js"></script>

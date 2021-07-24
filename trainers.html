@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Navbar Section -->
-  <nav class="navbar">
+  <nav class="navbar js--nav">
       <a href="/" class="navbar__logo">LUX</a>
       <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -35,7 +35,7 @@
     </div>
 
     <!-- Team Section -->
-    <div class="team" id="team">
+    <div class="team js--fixed-nav" id="team">
         <div class="team__wrapper">
             <div class="team__text animate-team">
                 <p class="topline">Private Coaching</p>
@@ -113,6 +113,7 @@
   </div>
 
   <script src="./jquery-3.5.1.min.js"></script>
+  <script src="./jquery.waypoints.min.js"></script>
   <script src="./gsap-minified/gsap.min.js"></script>
   <script src="./gsap-minified/ScrollTrigger.min.js"></script>
   <script src="./gsap-minified/ScrollToPlugin.min.js"></script>

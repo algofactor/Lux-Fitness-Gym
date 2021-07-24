@@ -26,12 +26,16 @@ $('a[href*="#"]').on('click', function (e) {
   })
 
 //   Fixed Navbar
-$(window).bind('scroll',function(){   
-    if ($(window).scrollTop() > 50) {
-            $('.navbar').addClass(".fixed");
+$(".js--fixed-nav").waypoint(function (direction) {
+    if (direction == "down") {
+        $(".js--nav").toggleClass("fixed")
+    } else {
+        $(".js--nav").toggleClass("fixed")
     }
-    // else {$('.navbar').hide();}
-  })
+    
+},{
+    offset:"60px"
+})
 
 
 
